@@ -1,8 +1,9 @@
-import React, {useEffect, useState, createRef} from 'react';
-import {CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select} from "@material-ui/core";
+import React, { useState, useEffect, createRef } from 'react';
+import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
 
 import PlaceDetails from '../PlaceDetails';
-import useStyles from './styles'
+import useStyles from './styles.js';
+
 const List = ({ places, type, setType, rating, setRating, childClicked, isLoading }) => {
   const [elRefs, setElRefs] = useState([]);
   const classes = useStyles();
